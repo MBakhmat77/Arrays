@@ -1,0 +1,25 @@
+
+Create an array of n odd numbers
+Write a createOddArray function that takes a non-negative integer n
+as an argument and returns an array containing n odd numbers.
+function createOddArray (n) {
+let arr = [];
+if (n === 0) return [];
+for (let i = 1; i <n * 2; i + = 2) {
+
+arr.push (i);
+}
+return arr;
+}
+
+ console.log (creatOddArray (5));
+  * /
+//////////////////////////////////////////////// ///////////////////////
+  / *
+function createNegativeArray (n) {
+let arr = [];
+for (let i = -1; i> = -n; i -) {
+arr.push (i);
+}
+return arr;
+}
