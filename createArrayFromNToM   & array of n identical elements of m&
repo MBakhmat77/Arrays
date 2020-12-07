@@ -1,0 +1,24 @@
+Create an array of integers from n to m
+// Write a createArrayFromNToM function that accepts non-negative integers
+// n, m (n <m) as arguments and returns an array containing numbers from n to m.
+// All tests guarantee that n <m, you don't need to check this condition in the function.
+function createArrayFromNToM (n, m) {
+let arr = [];
+for (let i = n; i <= m; i ++) {
+arr.push (i);
+}
+return arr;
+}
+//////////////////////////////////////////////////////////////////////////////////
+
+
+Create an array of n identical elements of m
+// Write a createArray function that takes n and m as arguments
+// and returns an array containing n elements equal to m.
+function createArray (n, m) {
+let arr = [];
+for (let i = 0; i <n; i ++) {
+arr.push (m);
+}
+return arr;
+}
