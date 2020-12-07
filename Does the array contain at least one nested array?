@@ -1,0 +1,11 @@
+
+Does the array contain at least one nested array?
+// Write a function isArrayContainsArray that takes an array arr as an argument and returns
+// true if at least one of the array elements is an array, and false otherwise.
+//////////////////////////////////////////////////////////////////////////////
+function isArrayContainsArray (arr) {
+for (let i = 0; i <arr.length; i ++) {
+if (Array.isArray (arr [i])) return true;
+}
+return false;
+}
