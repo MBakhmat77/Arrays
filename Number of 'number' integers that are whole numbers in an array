@@ -1,0 +1,12 @@
+Number of integers in an array
+// Write a function countIntegers that takes the arr array as
+// argument, and returns the number of elements that are integers.
+function countIntegers (arr) {
+let count = 0;
+for (let i = 0; i <= arr.length; i ++) {
+ if ({} .toString.call (arr [i]) === "[object Number]")
+if (arr [i]% 1 === 0)
+count ++;
+}
+return count;
+}
