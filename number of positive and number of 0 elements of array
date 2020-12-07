@@ -1,0 +1,26 @@
+Number of positive array elements
+// Write a function countPositive that takes an array arr as
+// argument, and returns the number of positive elements in the array.
+/ *
+function countPositive (arr) {
+let count = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]> 0)
+count ++;
+}
+return count;
+}
+//////////////////////////////////////////////////////////////////
+
+
+Number of zero elements in an array
+// Write a function countZeros that takes an array arr as
+// argument, and returns the number of array elements equal to zero.
+function countZeros (arr) {
+let count = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i] === 0)
+count ++;
+}
+return count;
+}
