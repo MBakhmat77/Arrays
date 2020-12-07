@@ -1,0 +1,22 @@
+The number of even elements of the array
+// Write a function countEven that takes an array arr as
+// argument, and returns the number of even elements in the array.
+function countEven (arr) {
+let count = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]% 2 === 0)
+count ++;
+}
+return count;
+}
+
+//////////////////////////////////////////////// /////////////
+
+function countEvenPositive (arr) {
+let count = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]% 2 === 0 && arr [i]> 0)
+count ++;
+}
+return count;
+}
