@@ -1,0 +1,14 @@
+New prices of goods
+// Array stores product prices. Prices have doubled. Convert the array so that the elements of the array
+// contained new prices.
+// Write a changeArray function that takes an array prices as an argument and returns
+// an array that stores new prices.
+function changeArray (prices) {
+let Arr = [];
+let newPrice;
+for (let i = 0; i <prices.length; i ++) {
+newPrice = prices [i] * 2;
+Arr.push (newPrice);
+}
+return Arr;
+}
