@@ -1,0 +1,17 @@
+
+The first element that is larger than its right-hand neighbor
+// Write a function firstBigger that takes a numeric array arr as an argument and returns the first element of the array,
+// which is larger than its right-hand neighbor, or undefined if the array is in ascending order.
+function firstBigger (arr) {
+let index = -1;
+let num = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]> arr [i + 1]) {
+index = i;
+num = arr [i];
+break;
+}
+}
+if (index === -1) return undefined;
+return num;
+}
