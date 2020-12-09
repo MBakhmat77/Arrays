@@ -1,0 +1,15 @@
+
+Array of temperatures in Fahrenheit
+// Write a function fahrenheit that takes two integers t1 and t2 (t1 <t2 is the start and end temperature in Celsius) and returns an array of Fahrenheit temperatures for the given temperature range. Temperatures in Celsius and Fahrenheit
+// linked by the formula: tf = tc * (9/5) + 32 The calculated values ​​are rounded to one decimal place.
+function fahrenheit (t1, t2) {
+let arr = [];
+let celDegree;
+let farDegree;
+for (celDegree = t1; celDegree <= t2; celDegree ++) {
+farDegree = (celDegree * 9/5) + 32;
+farDegree = + farDegree.toFixed (1);
+arr.push (farDegree);
+}
+return arr;
+}
