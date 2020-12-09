@@ -1,0 +1,19 @@
+
+First negative element and its index
+// Write a function firstNegative that takes an array arr as an argument,
+// and returns the first negative element of the array and its index (as an array [element, index])
+//, or undefined if the array contains no negative elements.
+/ *
+function firstNegative (arr) {
+let index = -1;
+let num = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i] <0) {
+index = i;
+  num = arr [i];
+break;
+}
+}
+if (index === -1) return undefined;
+else return [num, index];
+}
