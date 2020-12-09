@@ -1,0 +1,12 @@
+
+Number of triplets of elements, ordered strictly in ascending order
+// Write a function numberOfOrderedTriples that takes an array arr as an argument and returns
+// the number of triples of adjacent elements, which are strictly in ascending order.
+function numberOfOrderedTriples (arr) {
+let count = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i] <arr [i + 1] && arr [i]> arr [i -1])
+count ++;
+}
+return count;
+}
