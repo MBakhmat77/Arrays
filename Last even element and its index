@@ -1,0 +1,16 @@
+
+Last even element and its index
+// Write a function lastEvenElement that takes a numeric array arr as an argument and returns the last even element and its
+// array index [element, index], or undefined if the array contains no even elements.
+function lastEvenElement (arr) {
+let index = -1;
+let num = 0;
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]% 2 === 0) {
+index = i;
+num = arr [i];
+}
+}
+if (index === -1) return undefined;
+return [num, index];
+}
