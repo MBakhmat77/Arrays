@@ -1,0 +1,17 @@
+
+The number of goal scores
+// The football team took part in several games of the football season.
+// Array stores information about the number of goals scored by each player in different games.
+// For example, [[1, 3, 2, 1], [1, 2, 1], [2, 4], ..., [2, 1, 1]].
+function sumOfGoals (arr) {
+let sum = 0;
+let sumin = 0;
+for (let i = 0; i <arr.length; i ++) {
+for (let j = 0; j <arr [i] .length; j ++) {
+sum = sum + arr [i] [j];
+}
+
+}
+return sum;
+}
+console.log (sumOfGoals ([[1,3,6], [1,4], [7,4,3]]));
