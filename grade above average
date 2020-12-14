@@ -1,0 +1,15 @@
+How many students have a grade above average?
+
+function aboveAverageScore (arr) {
+let sum = 0;
+let count = 0;
+  let average = 0;
+for (let i = 0; i <arr.length; i ++) {
+sum = sum + arr [i];
+average = sum / arr.length;
+  if (arr [i]> sum / arr.length)
+ count = count + i; 
+}
+return count;
+}
+console.log (aboveAverageScore ([2,4,5,2,2,3,3,2,3,2,2,4,5,4]));
