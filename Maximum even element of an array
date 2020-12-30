@@ -1,0 +1,23 @@
+
+//////////////////////////////////////////////// /////////////////////////////////////
+Maximum even element of an array
+
+Write a function maxEven that takes arr as an argument and returns the maximum even element of the array. If the array contains no even elements or the array is empty, return undefined.
+
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+function maxEven (arr) {
+let even = [];
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]% 2 === 0) {
+even.push (arr [i]);
+}
+}
+if (even.length === 0) return undefined;
+let max = even [0];
+for (let el of even) {
+if (el> max) {
+max = el;
+}
+}
+return max;
+}
