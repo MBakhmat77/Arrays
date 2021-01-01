@@ -1,0 +1,21 @@
+
+Minimum odd array element
+question
+Write a minOdd function that takes an array arr as an argument and returns the minimum odd element of the array. If the array contains no odd elements or the array is empty, return undefined.
+
+Use a loop in your solution. The use of the Math.min () method is not permitted.
+function minOdd (arr) {
+let odd = [];
+for (let i = 0; i <arr.length; i ++) {
+if (arr [i]% 2 === 1) {
+odd.push (arr [i]);
+}
+}
+let min = odd [0];
+for (let el of odd) {
+if (el <min) {
+min = el;
+}
+}
+return min;
+}
